@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.component.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Login</h2>
+    <form (ngSubmit)="login()">
+      <input type="text" name="username" [(ngModel)]="loginUsername" placeholder="Username" required>
+      <input type="password" name="password" [(ngModel)]="loginPassword" placeholder="Password" required>
+      <input type="submit" value="Login">
+    </form>
+    <p>Don't have an account? <a routerLink="/register">Register</a></p>
+  </div>
+</body>
+</html>  
